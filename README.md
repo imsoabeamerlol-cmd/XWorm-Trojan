@@ -3,7 +3,13 @@
 During my investigation to analyze a sample of the **XWorm Trojan**, I decided to learn more about its behavior in the wild and examine its builder. After obtaining the builder, I discovered a security vulnerability that could assist security analysts in disrupting the builder's functionality or causing a Denial of Service (DoS) of the XWorm RAT C2 panel.
 
 To exploit the vulnerability, one would need the IP address of the C2 and the port for the reverse connection. It is possible to build the exploit using Visual Studio and modify the indicators of compromise (IOCs) to suit your needs.
-For those seeking additional samples.
+
+**Disclaimer:**
+
+Please note that this is for malware analysis and educational purposes only. Do not use it against other computers. I am not responsible for any malicious usage that may result from this repository.
+
+
+For those seeking additional samples, refer to the resources below:
 
 PoC Validation : https://packetstormsecurity.com/files/170981/XWorm-Trojan-2.1-NULL-Pointer-Dereference.html
 
@@ -21,4 +27,4 @@ XSS.IS FORUM
 
 ![Developer Website](https://i0.wp.com/blog.cyble.com/wp-content/uploads/2022/08/Figure-2-Post-by-The-Malicious-Program-Developer.png?resize=1024,722&ssl=1)
 
-Cyble - Archvie.
+**Warning:** This source code contains DLL files that could be injected by stagers. Build and test only in an isolated virtual machine environment.
